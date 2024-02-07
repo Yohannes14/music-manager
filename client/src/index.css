@@ -1,0 +1,9 @@
+
+body {
+  margin: 0;
+  background-image: url('../src/assets/bg.png');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  color: #fff;
+}
