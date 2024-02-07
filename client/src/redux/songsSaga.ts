@@ -32,7 +32,7 @@ function* getSongs(): Generator<Effect, void, any> {
             const { data } = error.response;
             yield put(getSongsFailure(data?.error))
         } else {
-            yield put(getSongsFailure('Unexpected error occurred'));
+            yield put(getSongsFailure('Error occurred'));
         }
 
     }
@@ -48,7 +48,7 @@ function* addSong(action: PayloadAction<Song>): Generator<Effect, void, any> {
             const { data } = error.response;
             yield put(addSongFailure(data?.error))
         } else {
-            yield put(addSongFailure('Unexpected error occurred'));
+            yield put(addSongFailure('Error occurred'));
         }
 
     }
@@ -80,7 +80,7 @@ function* deleteSong(action: PayloadAction<string>): Generator<Effect, void, any
             const { data } = error.response;
             yield put(deleteSongFailure(data?.error))
         } else {
-            yield put(deleteSongFailure('Unexpected error occurred'));
+            yield put(deleteSongFailure('Error occurred'));
         }
     }
 }
@@ -94,7 +94,7 @@ function* getStatistics(): Generator<Effect, void, any> {
             const { data } = error.response;
             yield put(getStatisticsFailure(data?.error))
         } else {
-            yield put(getStatisticsFailure('Unexpected error occurred'));
+            yield put(getStatisticsFailure('Error occurred'));
         }
 
     }
