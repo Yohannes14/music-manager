@@ -1,1 +1,1 @@
-export const API_BASE_URL = 'https://music-manager-d55g.onrender.com';
+export const API_BASE_URL = 'https://music-manager-d55g.onrender.com/api';
