@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React, { useEffect } from 'react'
 import { CiMusicNote1, CiUser } from 'react-icons/ci'
 import { MdOutlineAlbum, MdOutlineKeyboardVoice } from 'react-icons/md';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useAppSelector } from '../store/configureStore';
 import { getStatisticsStart } from '../redux/statistics';
 const Container = styled.div`

@@ -57,7 +57,7 @@ function* addSong(action: PayloadAction<Song>): Generator<Effect, void, any> {
 function* updateSong(action: PayloadAction<Song>): Generator<Effect, void, any> {
     try {
 
-        const response = yield call(axios.put, `${API_BASE_URL}/songs/${action.payload._id}`, action.payload);
+        yield call(axios.put, `${API_BASE_URL}/songs/${action.payload._id}`, action.payload);
         yield put(updateSongSuccess(action.payload))
 
     } catch (error: any) {
